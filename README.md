@@ -1,37 +1,41 @@
-# Forwarning
+# Website
 
-> I'm in the middle of working on like three different things for this game so docs are very minimal rn.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-# Cards
+## Installation
 
-You can modify already made cards with the [WaldoPatcher](https://github.com/MiMLoader/Waldo) (now built into MiMLoader) using the Card class.
-
-> You dont *have* to intsall the waldo packages as its mainly type definitions and the loader will deal with it for you.
-
-`bun add github:mimloader/waldo # with bun`
-
-`npm install https://github.com/mimloader/waldo # with npm`
-
-
-```js
-import { Card } from "waldo";
-
-export const card = new Card({
-  name: "Bash",
-});
+```bash
+yarn
 ```
 
-Every card propertiy can be edited!
+## Local Development
 
-## Custom Cards
-
-Its the same principal as editing normal Cards but now we use the `custom:true` prop so the WaldoPatcher can assign the new mod to a custom slot. There are 20 custom slots in the game so going over this will cause an error.
-
-```js
-import { Card } from "waldo";
-
-export const card = new Card({
-  name: "Super Cool Custom",
-  custom: true
-});
+```bash
+yarn start
 ```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```bash
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

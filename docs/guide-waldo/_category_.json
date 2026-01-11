@@ -1,0 +1,8 @@
+{
+  "label": "WaldoPatcher",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Making mods with the WaldoPatcher framework"
+  }
+}
