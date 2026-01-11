@@ -14,11 +14,6 @@ const config: Config = {
   url: "https://docs.mimloader.com",
   baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "mimloader", // Usually your GitHub org/user name.
-  projectName: "docs", // Usually your repo name.
-
   onBrokenLinks: "throw",
 
   i18n: {
